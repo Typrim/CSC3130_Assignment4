@@ -1,0 +1,25 @@
+* Assume the top of the stack is the last element of the sequence.
+
+After push(1)
+    {1}
+
+After push(20)
+    {1, 20}
+
+After pop()
+    {1}
+
+After push(pop()*2)
+    pop() returns 1
+    1 * 2 = 2
+    push(2) ->
+        {2}
+
+After push(0)
+    {2, 0}
+
+After push(pop()/2)
+    pop() return 0
+    0 / 2 = 0
+    push(0) ->
+        {2, 0}
