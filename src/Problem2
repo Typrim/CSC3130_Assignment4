@@ -1,0 +1,25 @@
+* Assume the front of the queue is the last element of the sequence.
+
+After push(2)
+    {2}
+
+After push(pop()+4)
+    pop() returns 2
+    2 + 4 = 6
+    push(6) ->
+        {6}
+
+After push(5)
+    {5, 6}
+
+After push(pop()/2)
+    pop() returns 6
+    6 / 2 = 3
+    push(3) ->
+        {3, 5}
+
+After pop()
+    {3}
+
+After pop()
+    {}
