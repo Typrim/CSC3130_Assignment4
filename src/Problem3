@@ -1,0 +1,3 @@
+int searchDeque(T[] array, T element) {
+
+}
