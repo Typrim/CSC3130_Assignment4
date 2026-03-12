@@ -1,3 +1,16 @@
-int searchDeque(T[] array, T element) {
-
+int searchDeque(ArrayDeque<T> q, T y) {
+    int size = q.size();
+    for (int i = 0; i < (size / 2) - 1; i++) {
+        if (q.removeFirst().equals(y)) {
+            return i;
+        }
+        if (q.removeLast().equals(y)) {
+            return size - i;
+        }
+    }
+    if (q.peek().equals(y)) {
+        return (int) size / 2;
+    }
+    //if not found
+    return -1;
 }
