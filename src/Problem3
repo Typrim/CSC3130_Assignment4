@@ -14,3 +14,8 @@ int searchDeque(ArrayDeque<T> q, T y) {
     //if not found
     return -1;
 }
+
+This searches in O(n/2) where n is the size of the deque because the for-loop at line 3 iterates only (n / 2) - 1 times,
+and its body is O(1) because it has constant operations. The rest of the method only has constant operations, making it
+O(1). Thus, the time complexity can be determined by the following equation O((n/2) - 1) * O(1) + O(1) = O(n/2) * O(1) +
+O(1) = O((n/2) * 1 + 1) = O(n/2). This is simplified to O(n), however.
