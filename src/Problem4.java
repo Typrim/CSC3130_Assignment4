@@ -30,6 +30,9 @@ public class Problem4 {
                 }
             }
         }
+        if (!stack.isEmpty()) {
+            return "NO";
+        }
         return "YES";
     }
 
